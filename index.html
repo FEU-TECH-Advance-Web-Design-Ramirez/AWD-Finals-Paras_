@@ -320,3 +320,32 @@
             </div>
         </div>
     </section>
+    
+    <!-- Player Management Modal -->
+    <div class="modal fade" id="playerManagementModal" tabindex="-1" aria-labelledby="playerManagementModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content cyber-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="playerManagementModalLabel">Manage Players</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closePlayerModal()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control cyber-input" id="playerNameInput" placeholder="Enter player name">
+                            <button class="btn cyber-btn" type="button" onclick="addPlayer()">Add</button>
+                        </div>
+                    </div>
+                    <div class="player-list-container">
+                        <h6>Players</h6>
+                        <ul id="playerList" class="list-unstyled player-list">
+                            <!-- Players will be added here dynamically -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn cyber-btn" data-bs-dismiss="modal" onclick="closePlayerModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>

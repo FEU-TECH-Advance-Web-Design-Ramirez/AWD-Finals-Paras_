@@ -581,3 +581,398 @@ body {
         margin-bottom: 70px;
     }
 }
+
+.abouttxt {color : #00f2ff;}
+
+.nav-user-dropdown .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-user-dropdown .dropdown-toggle:hover,
+.nav-user-dropdown .dropdown-toggle:focus {
+    color: cyan;
+}
+
+.nav-user-dropdown .dropdown-toggle i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 6, 51, 0.95);
+    border: 1px solid rgba(0, 242, 255, 0.7);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover, 
+.dropdown-item:focus {
+    background-color: rgba(0, 242, 255, 0.2);
+    color: cyan;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(0, 242, 255, 0.3);
+    margin: 0.3rem 0;
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+}
+
+.logout-link i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+#authLinks {
+    display: flex;
+    align-items: center;
+}
+
+/* Tournament Bracket Creator Styles */
+.bracket-creator-container {
+    background-color: #000;
+    padding: 60px 0;
+    border-top: 1px solid rgba(0, 242, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+    margin: 40px 0;
+}
+
+.bracket-creator-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bracket-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 42px;
+    color: #00f2ff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.bracket-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.bracket-control-panel {
+    background-color: rgba(0, 15, 30, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+.form-label {
+    color: #00f2ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.cyber-input {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.cyber-input:focus {
+    background-color: rgba(0, 10, 20, 0.8);
+    border-color: #00f2ff;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+}
+
+.cyber-btn, .cyber-btn-primary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.cyber-btn {
+    background-color: transparent;
+    border: 1px solid #00f2ff;
+    color: #00f2ff;
+}
+
+.cyber-btn:hover {
+    background-color: rgba(0, 242, 255, 0.1);
+    color: #00f2ff;
+}
+
+.cyber-btn-primary {
+    background-color: #00f2ff;
+    border: 1px solid #00f2ff;
+    color: #000;
+}
+
+.cyber-btn-primary:hover {
+    background-color: #00d9e6;
+    border-color: #00d9e6;
+    color: #000;
+}
+
+.bracket-preview {
+    background-color: rgba(0, 15, 30, 0.7);
+    border: 1px dashed rgba(0, 242, 255, 0.3);
+    border-radius: 8px;
+    min-height: 200px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.preview-placeholder i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgba(0, 242, 255, 0.5);
+}
+
+.preview-placeholder p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Make the bracket container scroll horizontally better */
+.bracket-preview-content {
+    width: 100%;
+    overflow-x: auto;
+    padding: 30px 20px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #00f2ff rgba(0, 15, 30, 0.7); /* For Firefox */
+    position: relative;
+}
+
+/* Custom scrollbar styling for better visibility */
+.bracket-preview-content::-webkit-scrollbar {
+    height: 8px;
+}
+
+.bracket-preview-content::-webkit-scrollbar-track {
+    background: rgba(0, 15, 30, 0.7);
+    border-radius: 4px;
+}
+
+.bracket-preview-content::-webkit-scrollbar-thumb {
+    background: #00f2ff;
+    border-radius: 4px;
+}
+
+.bracket-preview-content::-webkit-scrollbar-thumb:hover {
+    background: #00d9e6;
+}
+
+/* Improve bracket grid layout */
+.bracket-grid {
+    display: inline-flex; /* Changes from flex to inline-flex to allow horizontal scrolling */
+    flex-direction: row;
+    justify-content: flex-start; /* Changed from center to allow more natural scrolling */
+    gap: 60px; /* Increased spacing between rounds */
+    padding: 20px 40px; /* Added horizontal padding */
+    min-width: max-content; /* Ensures content doesn't shrink */
+}
+
+/* Fix alignment issues with matches */
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    position: relative;
+}
+
+/* Better spacing for matches */
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around; /* Helps with vertical alignment */
+    height: 100%;
+    gap: 40px;
+}
+
+/* Fix connector lines between matches */
+.bracket-match {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bracket-match::after {
+    content: '';
+    position: absolute;
+    right: -60px; /* Match the gap between rounds */
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 242, 255, 0.5);
+    z-index: 1;
+}
+
+/* Adjust vertical connector lines */
+.bracket-match:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    height: calc(100% + 40px); /* Increased height for better visibility */
+    width: 2px;
+    background-color: rgba(0, 242, 255, 0.5);
+    z-index: 1;
+}
+
+.bracket-match:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    right: -60px;
+    bottom: 50%;
+    height: calc(100% + 40px); /* Increased height for better visibility */
+    width: 2px;
+    background-color: rgba(0, 242, 255, 0.5);
+    z-index: 1;
+}
+
+/* Hide connectors for last round */
+.bracket-round:last-of-type .bracket-match::after,
+.bracket-round:last-of-type .bracket-match::before,
+.champion-round .bracket-match::after,
+.champion-round .bracket-match::before {
+    display: none;
+}
+
+.match-player {
+    background-color: rgba(0, 242, 255, 0.1);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    padding: 10px 15px;
+    margin: 5px 0;
+    color: white;
+    min-width: 180px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Winner highlighting */
+.match-player.winner {
+    background-color: rgba(0, 242, 255, 0.3);
+    border: 1px solid #00f2ff;
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+    font-weight: bold;
+}
+
+.match-player:hover {
+    background-color: rgba(0, 242, 255, 0.2);
+    border-color: #00f2ff;
+}
+
+.champion-round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ensures consistent height */
+}
+
+.champion-slot {
+    background-color: rgba(0, 242, 255, 0.2);
+    border: 2px solid #00f2ff;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 0; /* Removes default margin */
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+.champion-title {
+    color: #00f2ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Add visual indicator for scrollable content */
+.bracket-preview-content::after {
+    content: '←→';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #00f2ff;
+    font-size: 16px;
+    opacity: 0.8;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
+}
+
+/* Better alignment for rounds with fewer matches */
+.bracket-round:nth-child(2) .matches-container {
+    padding-top: 25%; /* Adjust as needed */
+}
+
+.bracket-round:nth-child(3) .matches-container {
+    padding-top: 75%; /* Adjust as needed */
+}
+
+.round-title {
+    color: #00f2ff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: rgba(0, 242, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Help tooltip */
+.bracket-help {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background-color: rgba(0, 15, 30, 0.8);
+    color: #00f2ff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bracket-preview-content:hover .bracket-help {
+    opacity: 1;
+}
