@@ -204,3 +204,119 @@
             </div>
         </div>
     </section>
+
+    <!-- Tetris Tournaments Section -->
+    <section class="tournaments-section">
+        <div class="container-fluid p-0">
+            <div class="tournament-container tetris-container">
+                <img src="./assets/img/landing tetris bg.png" class="tournament-bg-img" alt="Tetris Tournament">
+                <div class="tournament-overlay"></div>
+                <div class="tournament-text">
+                    <h2 class="tournament-title">TETRIS <span class="tournament-white">TOURNAMENTS</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arcade Section -->
+    <section class="arcade-section">
+        <div class="container-fluid p-0">
+            <div class="arcade-container">
+                <img src="./assets/img/filler.png" class="img-fluid w-100" alt="Arcade Gaming Area">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tekken Tournaments Section -->
+    <section class="tournaments-section">
+        <div class="container-fluid p-0">
+            <div class="tournament-container tekken-container">
+                <img src="./assets/img/landing tetris bg.png" class="tournament-bg-img" alt="Tekken Tournament">
+                <div class="tournament-overlay"></div>
+                <div class="tournament-text">
+                    <h2 class="tournament-title">TEKKEN <span class="tournament-white">TOURNAMENTS</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arcade Section -->
+    <section class="arcade-section">
+        <div class="container-fluid p-0">
+            <div class="arcade-container">
+                <img src="./assets/img/filler.png" class="img-fluid w-100" alt="Arcade Gaming Area">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Bracket Creator (Visible only to logged-in organizers) -->
+    <section id="bracketCreatorContainer" class="bracket-creator-container" style="display: none;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="bracket-creator-header">
+                        <h2 class="bracket-title">TOURNAMENT BRACKET CREATOR</h2>
+                        <p class="bracket-subtitle">Create and manage your tournament brackets</p>
+                    </div>
+                    
+                    <div class="bracket-control-panel">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="tournamentName" class="form-label">Tournament Name</label>
+                                <input type="text" class="form-control cyber-input" id="tournamentName" placeholder="Enter tournament name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="gameSelect" class="form-label">Game</label>
+                                <select class="form-select cyber-input" id="gameSelect">
+                                    <option selected>Select a game</option>
+                                    <option value="tetris">Tetris</option>
+                                    <option value="tekken">Tekken</option>
+                                    <option value="street-fighter">Street Fighter</option>
+                                    <option value="valorant">Valorant</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="startDate" class="form-label">Start Date</label>
+                                <input type="date" class="form-control cyber-input" id="startDate">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="endDate" class="form-label">End Date</label>
+                                <input type="date" class="form-control cyber-input" id="endDate">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="maxPlayers" class="form-label">Max Players</label>
+                                <select class="form-select cyber-input" id="maxPlayers">
+                                    <option value="8">8</option>
+                                    <option value="16" selected>16</option>
+                                    <option value="32">32</option>
+                                    <option value="64">64</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="tournamentDesc" class="form-label">Description</label>
+                                <textarea class="form-control cyber-input" id="tournamentDesc" rows="3" placeholder="Enter tournament description"></textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-between">
+                                <button type="button" class="btn cyber-btn" id="managePlayersBtn">
+                                    <i class="fas fa-users me-2"></i>Manage Players
+                                </button>
+                                <div>
+                                    <button type="button" class="btn cyber-btn me-2" id="previewBracketBtn">
+                                        <i class="fas fa-eye me-2"></i>Generate
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bracket-preview mt-4" id="bracketPreview">
+                        <div class="preview-placeholder">
+                            <i class="fas fa-trophy"></i>
+                            <p>Your bracket preview will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

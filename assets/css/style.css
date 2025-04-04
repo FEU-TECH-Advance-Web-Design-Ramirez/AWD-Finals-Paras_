@@ -302,3 +302,282 @@ body {
     z-index: 4;
     bottom: 20px;
 }
+
+.tournaments-section {
+    padding: 0;
+    margin: 0;
+}
+
+.tournament-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tournament-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.tournament-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.tournament-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+    margin-top: -80px;
+}
+
+.tournament-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.tetris-container .tournament-title {
+    color: #ff00ff;
+}
+
+.tekken-container .tournament-title {
+    color: #ff3333;
+}
+
+.tournament-white {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.arcade-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.arcade-container {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.arcade-container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: #00f2ff;
+    opacity: 0.3;
+    width: 100%;
+}
+
+.footer-content {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .footer {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-title {
+        font-size: 65px;
+    }
+    
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    
+    #tabletImageCarousel .carousel-inner {
+        height: 70vh;
+        max-height: 650px;
+    }
+    
+    .tournament-container {
+        height: 60vh;
+        max-height: 550px;
+    }
+    
+    .tournament-title {
+        font-size: 65px;
+    }
+    
+    .tournament-text {
+        margin-top: -50px;
+    }
+    
+    .arcade-container {
+        max-height: 170px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tournament-title {
+        font-size: 70px;
+    }
+
+    .tournament-text {
+        margin-top: -60px;
+    }
+
+    .hero-title {
+        font-size: 70px;
+    }
+
+    .hero-subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .tournament-title {
+        font-size: 60px;
+    }
+
+    .tournament-container {
+        height: 70vh;
+        max-height: 600px;
+    }
+
+    .tournament-text {
+        margin-top: -40px;
+    }
+
+    .hero-title {
+        font-size: 60px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .arcade-container {
+        max-height: 150px;
+    }
+    
+    .navbar-nav.ms-auto .nav-link {
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #mobileImageCarousel .carousel-inner {
+        height: 60vh;
+        max-height: 500px;
+    }
+
+    .tournament-title {
+        font-size: 40px;
+    }
+
+    .tournament-container {
+        height: 50vh;
+        max-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #mobileImageCarousel .carousel-inner {
+        height: 50vh;
+        max-height: 400px;
+    }
+
+    .tournament-title {
+        font-size: 28px;
+    }
+
+    .tournament-container {
+        height: 40vh;
+    }
+
+    .tournament-text {
+        margin-top: -20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .arcade-container {
+        max-height: 100px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 8px;
+    }
+
+    .navbar-nav.ms-auto .nav-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-nav.ms-auto .nav-link i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    .footer {
+        margin-bottom: 70px;
+    }
+}
