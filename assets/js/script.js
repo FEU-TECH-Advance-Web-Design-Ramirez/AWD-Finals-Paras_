@@ -485,10 +485,8 @@ function generateInitialRounds(playerList) {
                 completed: false
             });
         }
-        
         rounds.push(round);
     }
-    
     return rounds;
 }
 
