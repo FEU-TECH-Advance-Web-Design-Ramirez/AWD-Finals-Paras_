@@ -183,3 +183,64 @@ Completed peer reviews to ensure design consistency and usability.
 
 
 
+Week 4: API Introduction, Integration & Testing
+    1. API Fundamentals
+
+Overview of RESTful APIs and their role in web applications.
+
+Understanding HTTP methods (GET, POST, PUT, DELETE).
+
+Introduction to fetching and handling API responses in JavaScript.
+
+2. API Integration
+
+Setting up API endpoints in the project.
+
+Fetching data using JavaScript’s Fetch API or Axios.
+
+Displaying dynamic content using API responses.
+
+Handling errors and loading states efficiently.
+
+3. Enhancing Interactivity
+
+Implementing real-time updates using API calls.
+
+Using APIs for authentication, user profiles, and data storage.
+
+Connecting frontend components to API services.
+
+4. Testing API Endpoints
+
+Using Postman or similar tools to test API requests.
+
+Validating API responses and error handling.
+
+Debugging common API integration issues.
+
+5. Documentation & Peer Review
+
+Updating project documentation to include API integration details.
+
+Conducting peer reviews to ensure API functionality aligns with project goals.
+
+6. 2-Hour Demo Session
+
+Live demonstration of API integration:
+
+Fetching and displaying data dynamically.
+
+Debugging common API-related errors.
+
+Best practices for maintaining secure and efficient API connections.
+
+Takeaway
+
+By the end of Week 3, each group should have:
+
+Successfully integrated APIs into their project.
+
+Implemented dynamic content updates.
+
+Documented their API usage and testing strategies.
+
