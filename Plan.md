@@ -39,12 +39,12 @@ To ensure efficient collaboration, teams will:
 ✅ Develop a timeline with key milestones.
 
 Project Milestones
-Milestone	Task	Deadline
-Week 1	Initial Planning & Wireframes
-Week 2	HTML & CSS Development	
-Week 3	JavaScript & Interactivity	
-Week 4	Testing & Final Adjustments	
-
+Milestone	Task	
+Week 1	Project Kickoff & Planning
+Week 2	Initial Development	
+Week 3	Core Development & Design Refinement
+Week 4	API Introduction, Integration & Testing	
+Week 5  Final Testing, Presentation & Demo
 
 4. Team Collaboration Tools
 We will be using industry-standard tools to streamline our workflow:
@@ -243,4 +243,59 @@ Successfully integrated APIs into their project.
 Implemented dynamic content updates.
 
 Documented their API usage and testing strategies.
+
+Week 5: Final Testing, Presentation & Demo
+
+Activities:
+
+Final Testing:
+
+Comprehensive testing of the entire web application including unit testing, integration testing, and cross-browser testing.
+
+Peer reviews and user testing sessions to identify and fix remaining bugs or usability concerns.
+
+Polishing & Debugging:
+
+Apply final design tweaks and ensure consistency in layout and visual elements.
+
+Optimize performance through code clean-up, image compression, and asset minimization.
+
+Prepare final documentation, user guides, and deployment instructions.
+
+Presentation Preparation:
+
+Guidance on creating an engaging and informative presentation that tells the full story of the web app’s development—from concept to final output.
+
+Rehearse live demo sessions and prepare answers for common questions.
+
+Ensure clear communication of each team member’s role and contribution to the project.
+
+2-Hour Demo:
+
+Final live demo presentation where each group showcases their complete web application.
+
+Demonstrate key features, API integration, and refined design elements.
+
+Receive constructive feedback from peers and the instructor, with a focus on usability, functionality, and design.
+
+Takeaway:
+
+By the end of Week 5, each team should have:
+Not A fully functional, polished web application that meets all persona requirements.
+
+Final documentation and a working demo ready for presentation.
+
+Experience in comprehensive testing, debugging, and real-world presentation.
+
+Future Enhancements
+
+Add more pages like Games, Forums, and Events
+
+Implement user authentication and profile management
+
+Add interactive elements like game trailers and leaderboards
+
+Improve site performance by optimizing assets and reducing load times
+
+Introduce gamification elements such as badges and rewards to increase user engagement
 
