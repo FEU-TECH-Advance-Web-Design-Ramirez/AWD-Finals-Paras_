@@ -1,0 +1,766 @@
+/* Import Pixelated Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Navbar Styles - Unchanged */
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
+
+.logo-container {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: gray;
+    text-shadow: 1px 1px 0px black;
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin: 0 15px;
+}
+
+/* Adjustments for login and signup links in the navbar */
+.navbar-nav .nav-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 16px; /* Consistent icon size */
+    vertical-align: middle; /* Align icon with text */
+}
+
+/* Specifically target the right side navbar links */
+.navbar-nav.ms-auto .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan;
+}
+
+.nav-icons {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+    margin-right: 15px;
+}
+
+.nav-icons .nav-link {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.nav-icons .nav-link:hover {
+    color: cyan;
+}
+
+.nav-icons .nav-link i {
+    font-size: 20px;
+}
+
+/* Mobile social icons styles */
+.nav-icons-mobile {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 0;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.nav-icons-mobile .nav-link {
+    color: white;
+    padding: 8px 20px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-icons-mobile .nav-link:hover {
+    color: cyan;
+}
+
+/* Background Effects */
+.arcade-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+    overflow: hidden;
+}
+
+.arcade-bg:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, rgba(0, 242, 255, 0.1) 1px, transparent 1px) 0 0 / 20px 20px,
+        linear-gradient(0deg, rgba(0, 242, 255, 0.1) 1px, transparent 1px) 0 0 / 20px 20px;
+    z-index: -1;
+}
+
+/* Main Container Settings - Updated to be full width */
+.main-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.registration-header {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.glow-text {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 
+        0 0 5px #00f2ff,
+        0 0 10px #00f2ff,
+        0 0 15px #00f2ff;
+}
+
+.registration-header p {
+    font-size: 18px;
+}
+
+.highlight {
+    color: #00f2ff;
+}
+
+/* Top Image Container - Updated for full width */
+.top-image-container {
+    height: 200px;
+    background-image: url(../../../../assets/img/registration\ page\ pic.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0; /* Removed border radius for full width effect */
+    border-left: 0;
+    border-right: 0;
+    border-top: 2px solid #00f2ff;
+    border-bottom: 2px solid #00f2ff;
+    margin-bottom: 0; /* Removed margin */
+}
+
+/* Content Layout - Updated to match second file's dimensions */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0; /* Removed gap between containers */
+    margin: 0; /* Removed margins */
+    height: calc(100vh - 300px); /* Adjusted height calculation from second file */
+    min-height: 500px;
+}
+
+/* Left Column - Image Container - Updated to match second file */
+.left-image-container {
+    flex: 1.7;
+    width: 70%;
+    background-image: url(../../../../assets/img/regis\ pic\ leftside.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0; /* Removed border radius for flush edges */
+    border: none; /* Removed borders */
+    border-right: 2px solid #00f2ff; /* Add only right border */
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    min-height: 100%; /* Changed to 100% to match container height */
+}
+
+/* Right Column - Registration Form - Updated to match second file */
+.registration-form-container {
+    flex: 0.6;
+    width: 30%;
+    background-color: rgba(0, 6, 51, 0.85);
+    border: none; /* Removed borders */
+    border-radius: 0; /* Removed border radius */
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+    height: 100%; /* Changed to 100% to match container height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Inner Form Container - Adjusted to match second file */
+.inner-form-container {
+    background-color: rgba(0, 20, 150, 0.5);
+    border: 1px solid rgba(0, 242, 255, 0.7);
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0 0 10px rgba(0, 242, 255, 0.2);
+    padding: 1.5rem;
+}
+
+/* Form Title - Adjusted to match second file */
+.form-title {
+    color: #00f2ff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 45px;
+    padding-top: 70px;
+}
+
+/* Registration Form - Adjusted to match login form in second file */
+.registration-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(122, 192, 232, 0.7);
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.registration-form input::placeholder {
+    color: #001e3a;
+    font-family: Arial, sans-serif;
+}
+
+/* User Type Toggle */
+.user-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+    color: white;
+}
+
+.type-option {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.type-option:hover {
+    color: #00f2ff;
+    transform: scale(1.05);
+}
+
+.type-option i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #00f2ff;
+}
+
+.toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: #00f2ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 8px rgba(0, 242, 255, 0.6);
+}
+
+.toggle-active .toggle-button {
+    transform: translateX(25px);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #00f2ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #00d6e6;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.login-link a {
+    color: #00f2ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-link a:hover {
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.8);
+}
+
+/* Footer - Updated to match second file */
+.footer { 
+    text-align: center;
+    color: #fdfdfd;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(0, 242, 255, 0.3);
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animation for floating pixels */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+        transform: translateY(-40px) translateX(-10px);
+    }
+    75% {
+        transform: translateY(-20px) translateX(5px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+/* Ensure the desktop view is correct */
+@media (min-width: 992px) {
+    .nav-icons {
+        display: flex !important; /* Show desktop icons */
+    }
+    
+    .nav-icons-mobile {
+        display: none !important; /* Hide mobile icons */
+    }
+    
+    .footer {
+        margin-bottom: 0; /* Remove extra footer space */
+    }
+}
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1200px) {
+    .form-title {
+        font-size: 38px;
+    }
+    
+    .glow-text {
+        font-size: 36px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+    /* This will ensure the desktop icons are completely hidden on mobile */
+    .nav-icons {
+        display: none !important; /* Added !important to override any other styles */
+        visibility: hidden; /* Double protection to ensure it's hidden */
+        opacity: 0;
+    }
+    
+    .nav-icons-mobile {
+        display: flex; /* Show mobile social icons */
+    }
+    
+    .footer {
+        margin-bottom: 70px; /* Add space for the mobile social icons */
+    }
+    
+    /* Mobile logo fix */
+    .logo-container-mobile {
+        margin-right: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+    
+    .navbar-toggler {
+        margin-left: auto;
+    }
+    
+    /* Enhance navbar drop shadow for mobile */
+    .navbar {
+        box-shadow: 0 3px 12px rgba(0, 242, 255, 0.5);
+    }
+    
+    .content-wrapper {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    .left-image-container {
+        min-height: 300px;
+        margin-top: 0;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #00f2ff;
+    }
+    
+    .registration-form-container {
+        height: auto;
+        min-height: 500px;
+        width: 100%;
+    }
+    
+    .form-title {
+        font-size: 32px;
+        padding-top: 30px;
+    }
+    
+    .glow-text {
+        font-size: 32px;
+    }
+    
+    /* Adjust login/signup links for mobile */
+    .navbar-nav.ms-auto .nav-link {
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+}
+
+/* Large Phones */
+@media (max-width: 768px) {
+    .glow-text {
+        font-size: 28px;
+    }
+    
+    .registration-header p {
+        font-size: 16px;
+    }
+    
+    .form-title {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+    
+    .top-image-container {
+        height: 150px;
+    }
+    
+    .registration-form input {
+        padding: 0.7rem;
+        font-size: 14px;
+    }
+    
+    .submit-button {
+        padding: 0.8rem;
+        font-size: 11px;
+    }
+    
+    .login-link {
+        font-size: 14px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+    .glow-text {
+        font-size: 22px;
+    }
+    
+    .registration-header p {
+        font-size: 12px;
+    }
+    
+    .form-title {
+        font-size: 22px;
+        padding-top: 15px;
+        margin-bottom: 1rem;
+    }
+    
+    .top-image-container {
+        height: 120px;
+    }
+    
+    .registration-form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .registration-form input {
+        padding: 0.6rem;
+        margin-bottom: 0.8rem;
+        font-size: 12px;
+    }
+    
+    .submit-button {
+        padding: 0.7rem;
+        font-size: 10px;
+        margin-top: 0.8rem;
+    }
+    
+    .login-link {
+        font-size: 12px;
+    }
+    
+    .type-option {
+        font-size: 12px;
+    }
+    
+    .type-option i {
+        font-size: 14px;
+    }
+    
+    .toggle-switch {
+        width: 40px;
+        height: 20px;
+    }
+    
+    .toggle-button {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .toggle-active .toggle-button {
+        transform: translateX(20px);
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 8px;
+    }
+
+    /* Further adjustments for very small screens */
+    .navbar-nav.ms-auto .nav-link {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .navbar-nav.ms-auto .nav-link i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    
+    .inner-form-container {
+        padding: 1rem;
+    }
+}
+
+.signtxt { 
+    color: #00f2ff; 
+}
+
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: -100px; /* Start off-screen */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    width: 350px;
+    background: rgba(0, 15, 70, 0.9);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #00f2ff;
+}
+
+.notification.show {
+    top: 80px; /* Slide down when shown */
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+}
+
+.notification-content i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.notification-close:hover {
+    color: #00f2ff;
+    transform: scale(1.1);
+}
+
+/* Success and Error variations */
+.notification.success {
+    border-color: #00f2ff;
+}
+
+.notification.success i {
+    color: #00f2ff;
+}
+
+.notification.error {
+    border-color: #ff5b5b;
+}
+
+.notification.error i {
+    color: #ff5b5b;
+}
+
+/* Logged in user styles */
+.nav-link.logged-in {
+    position: relative;
+    color: #00f2ff !important;
+}
+
+.username-display {
+    max-width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Logout menu */
+.logout-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #00f2ff;
+    border-radius: 0 0 5px 5px;
+    width: 120px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.nav-link.logged-in:hover .logout-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logout-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.logout-menu a:hover {
+    background: rgba(0, 242, 255, 0.2);
+    color: #00f2ff;
+}
+
+.logout-menu i {
+    margin-right: 8px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .notification {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    .notification.show {
+        top: 70px;
+    }
+    
+    .username-display {
+        max-width: 80px;
+    }
+}
