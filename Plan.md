@@ -101,3 +101,85 @@ By the end of Week 2, each group should have:
  A working static web page
  A layout reflecting their persona’s requirements.
 
+Week 3: Core Development & Design Refinement
+
+1. Enhancing the UI
+CSS Refinement:
+
+Refined CSS to match the persona's color scheme (black, neon green, and electric blue).
+
+Chose these colors based on the feedback from the instructor, aligning with the features being added, such as tournament scheduling, game news, and community chat.
+
+Advanced CSS techniques like transitions, animations, flexbox, and grid layout were incorporated to improve user experience and design consistency.
+
+2. Interactive Elements
+JavaScript Integration:
+
+Introduced JavaScript to enhance interactivity:
+
+Navigation Menus: Added dynamic navigation menus with hover effects.
+
+Modals: Implemented modals for tournament details, news updates, and player profiles.
+
+Form Validations: JavaScript was used to validate forms for user registration, tournament sign-ups, and chat inputs.
+
+New Features:
+
+Dynamic Content Updates: Real-time updates through JavaScript for displaying tournament schedules, player stats, and chat messages.
+
+User Authentication: Integrated user login and registration systems for personalized experiences.
+
+Game News Feed: Dynamically fetches game news from an external API and displays it in a carousel or news section.
+
+3. Role-Specific Tasks
+Figma Designers:
+
+Updated and finalized high-fidelity designs based on feedback from the previous weeks.
+
+Ensured designs were aligned with the color scheme and features.
+
+Developers:
+
+Implemented interactive JavaScript components like modals, navigation menus, and form validation.
+
+Integrated new JavaScript features for dynamic content and real-time updates.
+
+Documentation & Testing Teams:
+
+Updated the project documentation to include details about the new JavaScript features and interactivity.
+
+Prepared initial test cases, focusing on functional and UI testing of new features, such as modals, forms, and dynamic content updates.
+
+4. Peer Review & Feedback
+Group Reviews:
+
+Each group shared their progress, ensuring that design consistency and usability were maintained.
+
+Collected peer feedback on the newly implemented JavaScript features and design elements.
+
+5. 2-Hour Demo Session
+Live Demonstration:
+
+Walkthrough of refining CSS styles and integrating JavaScript for interactivity.
+
+Demonstrated how the new features (modals, navigation menus, real-time updates) were implemented and tested.
+
+Shared debugging techniques for common issues with JavaScript interactivity and ensuring a smooth user experience.
+
+Best Practices:
+
+Emphasized maintaining design consistency throughout the application.
+
+Discussed the importance of responsiveness in the new features to ensure accessibility across devices.
+
+Takeaway
+By the end of Week 3, students should have:
+
+A core version of the web application with refined design elements and new interactive JavaScript features.
+
+Implemented dynamic content features such as game news feeds, real-time updates, and user authentication.
+
+Completed peer reviews to ensure design consistency and usability.
+
+
+
