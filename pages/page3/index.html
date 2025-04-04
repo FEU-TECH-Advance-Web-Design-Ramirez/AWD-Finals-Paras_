@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paras - Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand d-lg-none logo-container-mobile" href="../../index.html">
+                <span class="logo">PARAS</span>
+                <span class="subtitle">THE ULTIMATE GAMING HUB</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Links -->
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="../../index.html"> HOME </a>
+                    <a class="nav-link" href="../page1/index.html">ABOUT US</a>
+                </div>
+
+                <!-- Center Logo (visible only on desktop) -->
+                <a class="navbar-brand mx-auto logo-container d-none d-lg-block" href="../../index.html">
+                    <span class="logo">PARAS</span>
+                    <span class="subtitle">THE ULTIMATE GAMING HUB</span>
+                </a>
+
+                <!-- Right Links -->
+                <div class="navbar-nav ms-auto">
+                    <div id="authLinks">
+                        <!-- Default state (logged out) -->
+                        <a class="nav-link active" href="../page3/index.html"><i class="fa-solid fa-user"></i> LOGIN</a>
+                        <a class="nav-link" href="../page2/index.html"><i class="fa-solid fa-user-group"></i> SIGN UP</a>
+                    </div>
+                    <!-- Logged in state (initially hidden) -->
+                    <div id="userDropdown" class="nav-user-dropdown dropdown" style="display: none;">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user-circle"></i> <span id="usernameDisplay"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item logout-link" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="nav-icons">
+        <a class="nav-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a class="nav-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="nav-link" href="https://x.com/?lang=en"><i class="fa-brands fa-x"></i></a>
+    </div>
+    
+    <div class="nav-icons-mobile">
+        <a class="nav-link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a class="nav-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a class="nav-link" href="https://x.com/?lang=en"><i class="fa-brands fa-x"></i></a>
+    </div>
