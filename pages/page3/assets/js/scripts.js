@@ -121,7 +121,7 @@ function handleLoginSuccess(user, remember) {
     } else {
         // Regular redirect for other users
         setTimeout(() => {
-            window.location.href = '/AWD-Finals-Paras_/';
+            window.location.href = '/AWD-TEST-PARAS/';
         }, 2000);
     }
 }
@@ -131,7 +131,7 @@ function handleLoginSuccess(user, remember) {
     
     // Redirect to landing page after successful login
     setTimeout(() => {
-        window.location.href = '/AWD-Finals-Paras_/'; // Adjust this path based on your deployment structure
+        window.location.href = '/AWD-TEST-PARAS/'; // Adjust this path based on your deployment structure
     }, 2000);
 
 
@@ -177,7 +177,7 @@ function logoutUser() {
         
         // Redirect to home page after logout
         setTimeout(() => {
-            window.location.href = '/AWD-Finals-Paras_/';
+            window.location.href = '/AWD-TEST-PARAS/';
         }, 1500);
     }, 1000);
 }
