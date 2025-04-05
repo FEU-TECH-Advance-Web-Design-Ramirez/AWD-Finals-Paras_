@@ -225,7 +225,7 @@ async function makeApiRequest(url, method, body = null, retries = 2) {
     try {
         const options = {
             method,
-             // Using no-cors mode
+            mode: 'no-cors', // Using no-cors mode
             body: body ? JSON.stringify(body) : null
         };
         
