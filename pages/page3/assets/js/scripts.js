@@ -73,7 +73,7 @@ function validateLoginForm(email, password) {
 async function authenticateUser(email, password) {
     try {
         // First check if user exists
-        const response = await fetch(`http://localhost:3000/api/GameHub/users/login/${encodeURIComponent(email)}`, {
+        const response = await fetch(`https://demo-api-skills.vercel.app/api/GameHub/users/login/${encodeURIComponent(email)}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -113,11 +113,27 @@ function handleLoginSuccess(user, remember) {
     showCyberNotification('ACCESS GRANTED', `Welcome ${user.name || user.email}!`, 'success');
     updateAuthUI();
     
+    // Special redirect for admin email
+    if (user.email.toLowerCase() === 'parasadmin@gmail.com') {
+        setTimeout(() => {
+            window.location.href = 'https://vincintt.github.io/Paras-Admin/';
+        }, 2000);
+    } else {
+        // Regular redirect for other users
+        setTimeout(() => {
+            window.location.href = '/AWD-Finals-Paras_/';
+        }, 2000);
+    }
+}
+
+    showCyberNotification('ACCESS GRANTED', `Welcome ${user.name || user.email}!`, 'success');
+    updateAuthUI();
+    
     // Redirect to landing page after successful login
     setTimeout(() => {
-        window.location.href = '../../../../index.html';
+        window.location.href = '/AWD-Finals-Paras_/'; // Adjust this path based on your deployment structure
     }, 2000);
-}
+
 
 // Handle login error
 function handleLoginError(error) {
@@ -161,7 +177,7 @@ function logoutUser() {
         
         // Redirect to home page after logout
         setTimeout(() => {
-            window.location.href = '../../../../index.html';
+            window.location.href = '/AWD-Finals-Paras_/';
         }, 1500);
     }, 1000);
 }
